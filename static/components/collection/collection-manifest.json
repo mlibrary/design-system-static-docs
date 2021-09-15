@@ -1,0 +1,17 @@
+{
+  "entries": [
+    "./components/chat/chat.js",
+    "./components/icon/icon.js",
+    "./components/logo/logo.js",
+    "./components/universal-header/universal-header.js",
+    "./components/website-alerts/website-alerts.js",
+    "./components/website-header/website-header.js"
+  ],
+  "compiler": {
+    "name": "@stencil/core",
+    "version": "2.6.0",
+    "typescriptVersion": "4.2.3"
+  },
+  "collections": [],
+  "bundles": []
+}

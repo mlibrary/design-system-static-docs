@@ -1,558 +1,103 @@
-<!DOCTYPE html>
-<html dir="ltr" lang="en">
-  <head>
-    <meta charset="utf-8"/>
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0"
-/>
-    <title>Workshop — Design System — University of Michigan Library</title>
-    <link href="umich-lib.css" rel="stylesheet"/>
-    <script type="module" src="dist/umich-lib/umich-lib.esm.js"></script>
-    <script nomodule src="dist/umich-lib/umich-lib.js"></script>
-  </head>
-  <body>
-    <m-universal-header></m-universal-header>
-    <m-website-header></m-website-header>
+<!doctype html><html lang="en" data-stencil-build="jodhurph" class="hydrated"><head><meta charset="utf-8">  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>Welcome — Design System — University of Michigan Library</title> <meta name="description" content="The University of Michigan Library Design System aims to provide resources for designers and developers to build high quality and inclusive U-M Library websites that work well for everyone."> <!-- Social sharing meta --> <meta property="og:url" name="twitter:url" content="https://design-system.lib.umich.edu/"> <meta property="og:title" name="twitter:title" content="Welcome | Design System | University of Michigan Library"> <meta property="og:description" name="twitter:description" content="The University of Michigan Library Design System aims to provide resources for designers and developers to build high quality and inclusive U-M Library websites that work well for everyone."> <meta property="og:image" name="twitter:image" content="https://res.cloudinary.com/umich-lib/image/upload/c_fill,g_faces,h_630,w_1200/l_text:Crimson%20Text_160_center:Welcome,co_rgb:334354,c_fit/ds_share_bg.png"> <meta property="og:image:alt" name="twitter:image:alt" content="Welcome"> <meta property="og:site_name" content="Design System | University of Michigan Library"> <meta name="twitter:card" content="summary_large_image"> <style sty-id="sc-m-universal-header">/*!@.m-uh*/.m-uh.sc-m-universal-header{--color-blue-100:rgb(247, 248, 249);--color-blue-200:rgb(178, 190, 201);--color-blue-300:rgb(76, 103, 129);--color-blue-400:rgb(0, 39, 76);--color-blue-500:rgb(0, 19, 36);--color-maize-100:rgb(255, 249, 230);--color-maize-200:rgb(255, 234, 155);--color-maize-300:rgb(255, 218, 80);--color-maize-400:rgb(255, 203, 5);--color-maize-500:rgb(234, 186, 2);--color-neutral-100:rgb(229, 233, 237);--color-neutral-200:rgb(138, 150, 161);--color-neutral-300:rgb(99, 115, 129);--color-neutral-400:rgb(33, 43, 54);--color-neutral-500:rgb(6, 8, 10);--color-teal-100:rgb(233, 242, 245);--color-teal-200:rgb(167, 205, 219);--color-teal-300:rgb(101, 168, 191);--color-teal-400:rgb(29, 116, 145);--color-teal-500:rgb(16, 102, 132);--color-orange-100:rgb(255, 241, 235);--color-orange-200:rgb(255, 184, 153);--color-orange-300:rgb(255, 138, 88);--color-orange-400:rgb(242, 95, 31);--color-orange-500:rgb(199, 78, 26);--color-pink-100:rgb(252, 235, 235);--color-pink-200:rgb(242, 157, 157);--color-pink-300:rgb(236, 105, 105);--color-pink-400:rgb(217, 56, 56);--color-pink-500:rgb(191, 50, 50);--color-indigo-100:rgb(238, 241, 249);--color-indigo-200:rgb(170, 185, 227);--color-indigo-300:rgb(124, 147, 212);--color-indigo-400:rgb(80, 111, 197);--color-indigo-500:rgb(39, 67, 145);--color-green-100:rgb(234, 248, 238);--color-green-200:rgb(150, 219, 170);--color-green-300:rgb(87, 188, 117);--color-green-400:rgb(32, 168, 72);--color-green-500:rgb(25, 133, 57);--font-base-family:"Muli", sans-serif;--font-second-family:"Crimson Text", serif;--bold:700;--regular:400;--semibold:600;--line-height-default:1.5;--line-height-heading:1.25;--line-height-page-heading:1.125;--text-base-size:16px;--text-xxx-large:3.5rem;--text-xx-large:2.25rem;--text-x-large:2rem;--text-large:1.75rem;--text-medium:1.5rem;--text-small:1.125rem;--text-x-small:1.125rem;--text-xx-small:1rem;--text-xxx-small:0.875rem;--space-xxx-small:2px;--space-xx-small:4px;--space-x-small:8px;--space-small:12px;--space-medium:16px;--space-large:24px;--space-x-large:32px;--space-xx-large:40px;--space-xxx-large:48px;--space-xxxx-large:64px;--space-xxxxx-large:96px;--z-space-small:rgba(0, 0, 0, 0.2) 0px 2px 8px 0px;--z-space-medium:rgba(0, 0, 0, 0.2) 0px 2px 16px 0px;--opacity-75:0.75;--opacity-50:0.50;--opacity-30:0.30;--radius-default:4px;background:var(--color-blue-100);font-family:var(--font-base-family);line-height:var(--line-height-default);font-size:16px}/*!@.m-uh **/.m-uh.sc-m-universal-header *.sc-m-universal-header{-webkit-box-sizing:border-box;box-sizing:border-box;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}/*!@.m-uh *:focus*/.m-uh.sc-m-universal-header *.sc-m-universal-header:focus{outline:0;-webkit-box-shadow:0 0 0 2px var(--color-maize-400), 0 0 0 3px var(--color-neutral-400);box-shadow:0 0 0 2px var(--color-maize-400), 0 0 0 3px var(--color-neutral-400);border-radius:2px !important}/*!@.m-uh__content*/.m-uh__content.sc-m-universal-header{display:-ms-flexbox;display:flex;-ms-flex-pack:justify;justify-content:space-between;max-width:1280px;margin:0 auto;padding:0 var(--space-medium)}@media screen and (min-width: 721px){/*!@.m-uh__content*/.m-uh__content.sc-m-universal-header{padding:0 var(--space-xx-large)}}/*!@.m-uh__button-container*/.m-uh__button-container.sc-m-universal-header{display:inline-block;position:relative}/*!@.m-uh__button*/.m-uh__button.sc-m-universal-header{border:none;background:none;font-size:var(--font-base-size);color:var(--color-neutral-400);text-align:left;line-height:var(--line-height-default);display:-ms-flexbox;display:flex;-ms-flex-align:center;align-items:center;cursor:pointer}/*!@.m-uh__button,
+.m-uh__link*/.m-uh__button.sc-m-universal-header,.m-uh__link.sc-m-universal-header{margin:0;text-transform:uppercase;padding:var(--space-x-small);margin:0 calc(var(--space-x-small) * -1);color:var(--color-neutral-300);letter-spacing:1.25px;text-transform:uppercase;font-size:14px;font-weight:var(--bold);font-family:var(--font-base-family)}/*!@.m-uh__button:hover .m-uh__button-label,
+.m-uh__link:hover .m-uh__button-label*/.m-uh__button.sc-m-universal-header:hover .m-uh__button-label.sc-m-universal-header,.m-uh__link.sc-m-universal-header:hover .m-uh__button-label.sc-m-universal-header{text-decoration:underline;text-decoration-thickness:1px}/*!@.m-uh__button-label*/.m-uh__button-label.sc-m-universal-header{padding-right:var(--space-xx-small)}/*!@.m-uh__link*/.m-uh__link.sc-m-universal-header{text-decoration:none;margin-right:var(--space-x-large)}/*!@.m-uh__link:hover*/.m-uh__link.sc-m-universal-header:hover{text-decoration:underline;text-decoration-thickness:1px}@media screen and (min-width: 721px){/*!@.m-uh__link*/.m-uh__link.sc-m-universal-header{display:block}}/*!@.m-uh__link-text*/.m-uh__link-text.sc-m-universal-header{display:block}@media screen and (max-width: 620px){/*!@.m-uh__link-text*/.m-uh__link-text.sc-m-universal-header{display:none}}/*!@.m-uh__link-text--small*/.m-uh__link-text--small.sc-m-universal-header{display:none}@media screen and (max-width: 620px){/*!@.m-uh__link-text--small*/.m-uh__link-text--small.sc-m-universal-header{display:block}}/*!@.m-uh__icons*/.m-uh__icons.sc-m-universal-header{line-height:0}/*!@.m-uh__dropdown*/.m-uh__dropdown.sc-m-universal-header{position:absolute;right:calc(-1 * var(--space-medium));width:280px;-webkit-box-shadow:var(--z-space-medium);box-shadow:var(--z-space-medium);max-width:calc(100vw - (var(--space-xx-large) * 2));background:white;border-radius:2px;z-index:2}@media screen and (min-width: 721px){/*!@.m-uh__dropdown*/.m-uh__dropdown.sc-m-universal-header{display:grid;grid-template:"heading heading" "primary secondary"/1fr 280px;padding:var(--space-medium);width:862px;right:0}}/*!@.m-uh__heading*/.m-uh__heading.sc-m-universal-header{grid-area:heading;margin-top:0;font-size:28px;font-weight:700;margin-bottom:0;padding:var(--space-small) var(--space-medium)}@media screen and (max-width: 720px){/*!@.m-uh__heading*/.m-uh__heading.sc-m-universal-header{display:none}}/*!@.m-uh__list-primary,
+.m-uh__list-secondary*/.m-uh__list-primary.sc-m-universal-header,.m-uh__list-secondary.sc-m-universal-header{margin:0;padding:0;list-style:none;margin-bottom:var(--space-medium)}@media screen and (max-width: 720px){/*!@.m-uh__list-primary,
+.m-uh__list-secondary*/.m-uh__list-primary.sc-m-universal-header,.m-uh__list-secondary.sc-m-universal-header{margin:0}/*!@.m-uh__list-primary li:not(:last-of-type),
+.m-uh__list-secondary li:not(:last-of-type)*/.m-uh__list-primary.sc-m-universal-header li.sc-m-universal-header:not(:last-of-type),.m-uh__list-secondary.sc-m-universal-header li.sc-m-universal-header:not(:last-of-type){border-bottom:solid 1px var(--color-neutral-100)}}/*!@.m-uh__list-primary*/.m-uh__list-primary.sc-m-universal-header{grid-area:primary}@media screen and (min-width: 721px){/*!@.m-uh__list-primary*/.m-uh__list-primary.sc-m-universal-header{border-right:solid 1px var(--color-neutral-100);margin-right:var(--space-medium);padding-right:var(--space-medium)}}/*!@.m-uh__list-secondary*/.m-uh__list-secondary.sc-m-universal-header{grid-area:secondary}@media screen and (max-width: 720px){/*!@.m-uh__list-primary*/.m-uh__list-primary.sc-m-universal-header{border-bottom:solid 1px var(--color-neutral-100)}}/*!@.m-uh__item-link*/.m-uh__item-link.sc-m-universal-header{display:block;color:var(--color-neutral-400);font-weight:var(--semibold);text-decoration:none;padding:var(--space-x-small) var(--space-medium);border-radius:2px}@media screen and (max-width: 720px){/*!@.m-uh__item-link*/.m-uh__item-link.sc-m-universal-header{padding:var(--space-small) var(--space-medium)}}@media screen and (max-width: 720px){/*!@.m-uh__item-link:hover*/.m-uh__item-link.sc-m-universal-header:hover{border-radius:0;background:var(--color-blue-100)}}/*!@.m-uh__item-link:hover .m-uh__item-title, .m-uh__item-link:focus .m-uh__item-title*/.m-uh__item-link.sc-m-universal-header:hover .m-uh__item-title.sc-m-universal-header,.m-uh__item-link.sc-m-universal-header:focus .m-uh__item-title.sc-m-universal-header{text-decoration:underline;-webkit-text-decoration-color:var(--color-teal-400);text-decoration-color:var(--color-teal-400);text-decoration-thickness:2px}/*!@.m-uh__item-title*/.m-uh__item-title.sc-m-universal-header{display:block}/*!@.m-uh__item-desc*/.m-uh__item-desc.sc-m-universal-header{display:none}@media screen and (min-width: 721px){/*!@.m-uh__item-desc*/.m-uh__item-desc.sc-m-universal-header{display:block;font-weight:400;color:var(--color-neutral-300)}}/*!@.m-uh__dropdown-error*/.m-uh__dropdown-error.sc-m-universal-header{padding:0 var(--space-medium)}/*!@.m-uh__dropdown-error strong*/.m-uh__dropdown-error.sc-m-universal-header strong.sc-m-universal-header{font-weight:var(--bold)}/*!@.m-uh__dropdown-error a*/.m-uh__dropdown-error.sc-m-universal-header a.sc-m-universal-header{color:var(--color-teal-400)}</style><style sty-id="sc-m-website-header">/*!@.visually-hidden*/.visually-hidden.sc-m-website-header{border:0;clip:rect(0 0 0 0);height:auto;margin:0;overflow:hidden;padding:0;position:absolute;width:1px;white-space:nowrap}/*!@:host*/.sc-m-website-header-h{--color-blue-100:rgb(247, 248, 249);--color-blue-200:rgb(178, 190, 201);--color-blue-300:rgb(76, 103, 129);--color-blue-400:rgb(0, 39, 76);--color-blue-500:rgb(0, 19, 36);--color-maize-100:rgb(255, 249, 230);--color-maize-200:rgb(255, 234, 155);--color-maize-300:rgb(255, 218, 80);--color-maize-400:rgb(255, 203, 5);--color-maize-500:rgb(234, 186, 2);--color-neutral-100:rgb(229, 233, 237);--color-neutral-200:rgb(138, 150, 161);--color-neutral-300:rgb(99, 115, 129);--color-neutral-400:rgb(33, 43, 54);--color-neutral-500:rgb(6, 8, 10);--color-teal-100:rgb(233, 242, 245);--color-teal-200:rgb(167, 205, 219);--color-teal-300:rgb(101, 168, 191);--color-teal-400:rgb(29, 116, 145);--color-teal-500:rgb(16, 102, 132);--color-orange-100:rgb(255, 241, 235);--color-orange-200:rgb(255, 184, 153);--color-orange-300:rgb(255, 138, 88);--color-orange-400:rgb(242, 95, 31);--color-orange-500:rgb(199, 78, 26);--color-pink-100:rgb(252, 235, 235);--color-pink-200:rgb(242, 157, 157);--color-pink-300:rgb(236, 105, 105);--color-pink-400:rgb(217, 56, 56);--color-pink-500:rgb(191, 50, 50);--color-indigo-100:rgb(238, 241, 249);--color-indigo-200:rgb(170, 185, 227);--color-indigo-300:rgb(124, 147, 212);--color-indigo-400:rgb(80, 111, 197);--color-indigo-500:rgb(39, 67, 145);--color-green-100:rgb(234, 248, 238);--color-green-200:rgb(150, 219, 170);--color-green-300:rgb(87, 188, 117);--color-green-400:rgb(32, 168, 72);--color-green-500:rgb(25, 133, 57);--font-base-family:"Muli", sans-serif;--font-second-family:"Crimson Text", serif;--bold:700;--regular:400;--semibold:600;--line-height-default:1.5;--line-height-heading:1.25;--line-height-page-heading:1.125;--text-base-size:16px;--text-xxx-large:3.5rem;--text-xx-large:2.25rem;--text-x-large:2rem;--text-large:1.75rem;--text-medium:1.5rem;--text-small:1.125rem;--text-x-small:1.125rem;--text-xx-small:1rem;--text-xxx-small:0.875rem;--space-xxx-small:2px;--space-xx-small:4px;--space-x-small:8px;--space-small:12px;--space-medium:16px;--space-large:24px;--space-x-large:32px;--space-xx-large:40px;--space-xxx-large:48px;--space-xxxx-large:64px;--space-xxxxx-large:96px;--z-space-small:rgba(0, 0, 0, 0.2) 0px 2px 8px 0px;--z-space-medium:rgba(0, 0, 0, 0.2) 0px 2px 16px 0px;--opacity-75:0.75;--opacity-50:0.50;--opacity-30:0.30;--radius-default:4px;font-family:var(--font-base-family);line-height:var(--line-height-default);font-size:16px;background:white}/*!@:host **/.sc-m-website-header-h *.sc-m-website-header{-webkit-box-sizing:border-box;box-sizing:border-box;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}/*!@.website-header*/.website-header.sc-m-website-header{background:white}/*!@.website-header--dark*/.website-header--dark.sc-m-website-header{background:var(--color-blue-400)}/*!@.website-header--dark .website-header__website-name*/.website-header--dark.sc-m-website-header .website-header__website-name.sc-m-website-header{color:var(--color-blue-100)}/*!@.website-header__container*/.website-header__container.sc-m-website-header{max-width:1280px;margin:0 auto;padding:var(--space-medium)}@media screen and (min-width: 721px){/*!@.website-header__container*/.website-header__container.sc-m-website-header{padding:var(--space-medium) var(--space-xx-large)}}/*!@.website-header__inner-container*/.website-header__inner-container.sc-m-website-header{display:-ms-flexbox;display:flex;-ms-flex-align:center;align-items:center;-ms-flex-pack:justify;justify-content:space-between;-ms-flex-wrap:wrap;flex-wrap:wrap}/*!@.website-header__logo-container*/.website-header__logo-container.sc-m-website-header{display:-ms-flexbox;display:flex;-ms-flex-direction:column;flex-direction:column}@media screen and (min-width: 721px){/*!@.website-header__logo-container*/.website-header__logo-container.sc-m-website-header{-ms-flex-direction:row;flex-direction:row;-ms-flex-align:center;align-items:center;-ms-flex-pack:justify;justify-content:space-between}/*!@.website-header__logo-container .website-header__lib-link*/.website-header__logo-container.sc-m-website-header .website-header__lib-link.sc-m-website-header{margin-bottom:0}}/*!@.website-header__lib-link*/.website-header__lib-link.sc-m-website-header{margin-right:var(--space-medium);display:inline-block;line-height:0;margin-bottom:var(--space-x-small)}/*!@.website-header__website-home-link*/.website-header__website-home-link.sc-m-website-header{display:-ms-inline-flexbox;display:inline-flex;-ms-flex-align:center;align-items:center;color:var(--color-neutral-300);text-decoration:none;line-height:0}/*!@.website-header__website-home-link:hover .website-header__website-name*/.website-header__website-home-link.sc-m-website-header:hover .website-header__website-name.sc-m-website-header{text-decoration:underline}/*!@.website-header__website-name*/.website-header__website-name.sc-m-website-header{display:block;font-size:var(--text-medium);text-transform:uppercase;line-height:1.1;letter-spacing:0.5px}</style><style sty-id="sc-m-website-alerts">/*!@.m-alerts*/.m-alerts.sc-m-website-alerts{--color-blue-100:rgb(247, 248, 249);--color-blue-200:rgb(178, 190, 201);--color-blue-300:rgb(76, 103, 129);--color-blue-400:rgb(0, 39, 76);--color-blue-500:rgb(0, 19, 36);--color-maize-100:rgb(255, 249, 230);--color-maize-200:rgb(255, 234, 155);--color-maize-300:rgb(255, 218, 80);--color-maize-400:rgb(255, 203, 5);--color-maize-500:rgb(234, 186, 2);--color-neutral-100:rgb(229, 233, 237);--color-neutral-200:rgb(138, 150, 161);--color-neutral-300:rgb(99, 115, 129);--color-neutral-400:rgb(33, 43, 54);--color-neutral-500:rgb(6, 8, 10);--color-teal-100:rgb(233, 242, 245);--color-teal-200:rgb(167, 205, 219);--color-teal-300:rgb(101, 168, 191);--color-teal-400:rgb(29, 116, 145);--color-teal-500:rgb(16, 102, 132);--color-orange-100:rgb(255, 241, 235);--color-orange-200:rgb(255, 184, 153);--color-orange-300:rgb(255, 138, 88);--color-orange-400:rgb(242, 95, 31);--color-orange-500:rgb(199, 78, 26);--color-pink-100:rgb(252, 235, 235);--color-pink-200:rgb(242, 157, 157);--color-pink-300:rgb(236, 105, 105);--color-pink-400:rgb(217, 56, 56);--color-pink-500:rgb(191, 50, 50);--color-indigo-100:rgb(238, 241, 249);--color-indigo-200:rgb(170, 185, 227);--color-indigo-300:rgb(124, 147, 212);--color-indigo-400:rgb(80, 111, 197);--color-indigo-500:rgb(39, 67, 145);--color-green-100:rgb(234, 248, 238);--color-green-200:rgb(150, 219, 170);--color-green-300:rgb(87, 188, 117);--color-green-400:rgb(32, 168, 72);--color-green-500:rgb(25, 133, 57);--font-base-family:"Muli", sans-serif;--font-second-family:"Crimson Text", serif;--bold:700;--regular:400;--semibold:600;--line-height-default:1.5;--line-height-heading:1.25;--line-height-page-heading:1.125;--text-base-size:16px;--text-xxx-large:3.5rem;--text-xx-large:2.25rem;--text-x-large:2rem;--text-large:1.75rem;--text-medium:1.5rem;--text-small:1.125rem;--text-x-small:1.125rem;--text-xx-small:1rem;--text-xxx-small:0.875rem;--space-xxx-small:2px;--space-xx-small:4px;--space-x-small:8px;--space-small:12px;--space-medium:16px;--space-large:24px;--space-x-large:32px;--space-xx-large:40px;--space-xxx-large:48px;--space-xxxx-large:64px;--space-xxxxx-large:96px;--z-space-small:rgba(0, 0, 0, 0.2) 0px 2px 8px 0px;--z-space-medium:rgba(0, 0, 0, 0.2) 0px 2px 16px 0px;--opacity-75:0.75;--opacity-50:0.50;--opacity-30:0.30;--radius-default:4px;font-family:var(--font-base-family);line-height:var(--line-height-default);color:var(--color-neutral-400);font-size:16px}/*!@.m-alerts **/.m-alerts.sc-m-website-alerts *.sc-m-website-alerts{-webkit-box-sizing:border-box;box-sizing:border-box}/*!@.m-alerts p*/.m-alerts.sc-m-website-alerts p.sc-m-website-alerts{margin:0;padding:0}/*!@.m-alerts a*/.m-alerts.sc-m-website-alerts a.sc-m-website-alerts{color:var(--color-neutral-400)}/*!@.m-alerts strong*/.m-alerts.sc-m-website-alerts strong.sc-m-website-alerts{font-weight:800}/*!@.m-alerts *:focus*/.m-alerts.sc-m-website-alerts *.sc-m-website-alerts:focus{outline:0;-webkit-box-shadow:0 0 0 2px var(--color-maize-400), 0 0 0 3px var(--color-neutral-400);box-shadow:0 0 0 2px var(--color-maize-400), 0 0 0 3px var(--color-neutral-400);border-radius:2px !important}/*!@.m-alerts__heading*/.m-alerts__heading.sc-m-website-alerts{position:absolute !important;height:1px;width:1px;overflow:hidden;clip:rect(1px 1px 1px 1px);clip:rect(1px, 1px, 1px, 1px)}/*!@.m-alert*/.m-alert.sc-m-website-alerts{background:var(--color-orange-300)}/*!@.m-alert + .m-alert*/.m-alert.sc-m-website-alerts+.m-alert.sc-m-website-alerts{border-top:solid 1px var(--color-orange-400)}/*!@.m-alert__content*/.m-alert__content.sc-m-website-alerts{max-width:1280px;margin:0 auto;padding:0 var(--space-medium);display:-ms-flexbox;display:flex}@media screen and (min-width: 721px){/*!@.m-alert__content*/.m-alert__content.sc-m-website-alerts{padding:0 var(--space-xx-large)}}/*!@.m-alert__content m-icon*/.m-alert__content.sc-m-website-alerts m-icon.sc-m-website-alerts{padding-top:var(--space-small);margin-right:var(--space-small)}/*!@.m-alert__html*/.m-alert__html.sc-m-website-alerts{padding:var(--space-x-small) 0}/*!@.m-alert__html p + p*/.m-alert__html.sc-m-website-alerts p.sc-m-website-alerts+p.sc-m-website-alerts{margin-top:var(--space-x-small)}</style><link rel="icon" href="/static/images/favicon-32x32.png" type="image/png"> <!-- Production umich-lib styles --> <link href="https://unpkg.com/@umich-lib/css@v1/dist/umich-lib.css" rel="stylesheet"> <!-- Development umich-lib styles --> <!-- <link rel="stylesheet" href="/css/umich-lib.css"/> --> <link rel="stylesheet" href="/styles/global.css"> <script type="module" src="/static/components/umich-lib/umich-lib.esm.js"></script> <script nomodule="" src="/static/components/umich-lib/umich-lib.js"></script> </head> <body> <m-universal-header class="sc-m-universal-header-h hydrated" s-id="1"><!--r.1--><header class="m-uh sc-m-universal-header" c-id="1.0.0.0"><div class="m-uh__content sc-m-universal-header" c-id="1.1.1.0"><a class="m-uh__link sc-m-universal-header" href="https://www.lib.umich.edu/" c-id="1.2.2.0"><span class="m-uh__link-text sc-m-universal-header" c-id="1.3.3.0"><!--t.1.4.4.0-->University of Michigan Library</span><span class="m-uh__link-text--small sc-m-universal-header" c-id="1.5.3.1"><abbr title="University of Michigan" class="sc-m-universal-header" c-id="1.6.4.0"><!--t.1.7.5.0-->U-M</abbr><!--t.1.8.4.1--> Library</span></a><div class="m-uh__button-container sc-m-universal-header" c-id="1.9.2.1"><button class="m-uh__button sc-m-universal-header" aria-expanded="false" c-id="1.10.3.0"><span class="m-uh__button-label sc-m-universal-header" c-id="1.11.4.0"><!--t.1.12.5.0-->Explore</span><div aria-hidden="true" class="m-uh__icons sc-m-universal-header" c-id="1.13.4.1"><m-icon class="sc-m-universal-header hydrated" innerhtml="<svg xmlns=&quot;http://www.w3.org/2000/svg&quot; role=&quot;presentation&quot; focusable=&quot;false&quot; aria-hidden=&quot;false&quot; width=&quot;16&quot; height=&quot;16&quot; fill=&quot;currentColor&quot; viewBox=&quot;0 0 24 24&quot;><path d=&quot;M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z&quot;/></svg>" c-id="1.14.5.0" s-id="2"><svg xmlns="http://www.w3.org/2000/svg" role="presentation" focusable="false" aria-hidden="false" width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"></path></svg></m-icon></div></button></div></div></header><m-website-alerts class="sc-m-universal-header sc-m-website-alerts-h hydrated" c-id="1.15.0.1" s-id="3"><!--r.3--></m-website-alerts></m-universal-header> <m-website-header name="Design System" class="sc-m-website-header-h hydrated" to="/" s-id="4"><!--r.4--><header class="website-header sc-m-website-header" c-id="4.0.0.0"><div class="website-header__container sc-m-website-header" c-id="4.1.1.0"><div class="website-header__inner-container sc-m-website-header sc-m-website-header-s" c-id="4.2.2.0"><div class="website-header__logo-container sc-m-website-header" c-id="4.3.3.0"><a href="https://www.lib.umich.edu/" class="website-header__lib-link sc-m-website-header" c-id="4.4.4.0"><span class="visually-hidden sc-m-website-header" c-id="4.5.5.0"><!--t.4.6.6.0-->University of Michigan Library</span><m-logo class="sc-m-website-header hydrated" c-id="4.7.5.1" s-id="5"><!--r.5--><svg viewBox="0 0 199 30" xmlns="http://www.w3.org/2000/svg" height="34px" width="224px" focusable="false" aria-hidden="true" c-id="5.0.0.0"><g fill="none" fill-rule="evenodd" c-id="5.1.1.0"><g fill-rule="nonzero" c-id="5.2.2.0"><polyline fill="#FFCB05" points="20.9572917 24.7441667 12.3733333 13.0122917 12.3733333 21.5458333 15.7866667 21.5458333 15.7866667 29.973125 0 29.973125 0 21.5458333 3.19875 21.5458333 3.19875 8.425625 0 8.425625 0 0 12.4010417 0 20.9572917 11.8164583 29.5135417 0 41.9116667 0 41.9116667 8.425625 38.7110417 8.425625 38.7110417 21.5458333 41.9116667 21.5458333 41.9116667 29.973125 26.1270833 29.973125 26.1270833 21.5458333 29.5377083 21.5458333 29.5377083 13.0122917 20.9572917 24.7441667" c-id="5.3.3.0"></polyline><polyline fill="#00274C" points="58.6452083 30 58.6452083 0.0420833333 62.461875 0.0420833333 62.461875 26.680625 73.4579167 26.680625 73.4579167 30 58.6452083 30" c-id="5.4.3.1"></polyline><polygon fill="#00274C" points="77.9570833 29.9875 81.773125 29.9875 81.773125 0.0420833333 77.9570833 0.0420833333" c-id="5.5.3.2"></polygon><path d="M91.0308333,26.680625 L96.425,26.680625 C100.491042,26.680625 101.944583,23.775625 101.944583,21.5777083 C101.944583,16.8052083 98.9972917,15.9754167 95.0983333,15.9754167 L91.0308333,15.9754167 L91.0308333,26.680625 Z M91.0308333,12.655625 L96.5916667,12.655625 C99.5779167,12.6139583 101.032083,10.7891667 101.032083,7.884375 C101.032083,5.395 99.6195833,3.36145833 96.425,3.36145833 L91.0308333,3.36145833 L91.0308333,12.655625 Z M87.2135417,30 L87.2135417,0.0420833333 L96.9652083,0.0420833333 C101.114375,0.0420833333 102.524792,1.4525 103.644792,3.11291667 C104.683542,4.73125 104.848958,6.51583333 104.848958,7.095625 C104.848958,10.83 103.562917,13.320625 99.7033333,14.1910417 L99.7033333,14.399375 C103.978333,14.8972917 105.844583,17.4695833 105.844583,21.5777083 C105.844583,29.2535417 100.242708,30 96.8402083,30 L87.2135417,30 Z" fill="#00274C" c-id="5.6.3.3"></path><path d="M113.772708,12.9047917 L119.500625,12.9047917 C122.239792,12.9047917 123.5675,10.5397917 123.5675,7.925 C123.5675,5.76791667 122.485833,3.36145833 119.540625,3.36145833 L113.772708,3.36145833 L113.772708,12.9047917 Z M113.772708,16.2245833 L113.772708,30 L109.956458,30 L109.956458,0.0420833333 L120.28875,0.0420833333 C125.6,0.0420833333 127.465625,3.77729167 127.465625,7.51104167 C127.465625,11.0377083 125.515833,13.7347917 121.988125,14.3575 L121.988125,14.44 C125.431042,14.9795833 126.675417,16.14125 126.885,22.1570833 C126.927083,23.4435417 127.341042,28.1325 127.924167,30 L123.940833,30 C122.860417,27.9254167 123.108542,24.025625 122.777083,20.041875 C122.485833,16.3908333 119.540625,16.2245833 118.25625,16.2245833 L113.772708,16.2245833 Z" fill="#00274C" c-id="5.7.3.4"></path><path d="M143.173333,3.56770833 L143.09,3.56770833 L138.401042,19.5439583 L147.989375,19.5439583 L143.173333,3.56770833 Z M140.848333,0.0420833333 L145.703958,0.0420833333 L155.45625,30 L151.181875,30 L149.025417,22.8620833 L137.448958,22.8620833 L135.207292,30 L131.349167,30 L140.848333,0.0420833333 Z" fill="#00274C" c-id="5.8.3.5"></path><path d="M162.97875,12.9047917 L168.704583,12.9047917 C171.442292,12.9047917 172.769167,10.5397917 172.769167,7.925 C172.769167,5.76791667 171.69125,3.36145833 168.745625,3.36145833 L162.97875,3.36145833 L162.97875,12.9047917 Z M162.97875,16.2245833 L162.97875,30 L159.159375,30 L159.159375,0.0420833333 L169.491667,0.0420833333 C174.801667,0.0420833333 176.670625,3.77729167 176.670625,7.51104167 C176.670625,11.0377083 174.720208,13.7347917 171.192708,14.3575 L171.192708,14.44 C174.636458,14.9795833 175.881042,16.14125 176.087917,22.1570833 C176.1325,23.4435417 176.546458,28.1325 177.125833,30 L173.142083,30 C172.064583,27.9254167 172.314583,24.025625 171.981875,20.041875 C171.69125,16.3908333 168.745625,16.2245833 167.459583,16.2245833 L162.97875,16.2245833 Z" fill="#00274C" c-id="5.9.3.6"></path><polyline fill="#00274C" points="194.878958 0.0420833333 198.737917 0.0420833333 190.562708 18.5897917 190.562708 30 186.744583 30 186.744583 18.5897917 178.695208 0.0420833333 182.968542 0.0420833333 188.82 14.5227083 194.878958 0.0420833333" c-id="5.10.3.7"></polyline><polygon fill="#00274C" points="50.1395834 29.9875 51.19625 29.9875 51.19625 0 50.1395834 0" c-id="5.11.3.8"></polygon></g></g></svg></m-logo></a><a href="/" class="website-header__website-home-link sc-m-website-header" c-id="4.8.4.1"><span class="website-header__website-name sc-m-website-header" c-id="4.9.5.0"><!--t.4.10.6.0-->Design System</span></a></div><!--s.4.11.3.1.--></div></div></header></m-website-header> <main class="layout home"> <h1 class="home-heading">We design our websites for everyone.</h1> <p class="home-lede">Apply our Web Components and resources to create a trusted and digitally inclusive University of Michigan Library.</p> <img src="/static/images/aerial-campus-view.jpg" alt="" class="home-image"> <section> <h2 id="web-components">Web Components</h2> <ul class="cards"> <li class="card"> <div class="text"> <h3> <a href="/chat">Chat</a> </h3> <p>The Chat component provides access to the Ask a Librarian live chat service.</p> </div> <div class="img"> <img src="/static/images/components/chat.png" alt=""> </div> </li> <li class="card"> <div class="text"> <h3> <a href="/universal-header">Universal Header</a> </h3> <p>The Universal Header shows users that they are on a U-M Library website and provides a quick and organized way for users to access other library websites.</p> </div> <div class="img"> <img src="/static/images/components/universal-header.png" alt=""> </div> </li> <li class="card"> <div class="text"> <h3> <a href="/website-header">Website Header</a> </h3> <p>The Website Header displays our logo and shows users what U-M Library website that they are using.</p> </div> <div class="img"> <img src="/static/images/components/website-header.png" alt=""> </div> </li> </ul> </section> </main> <div class="layout integration"> <h2>Get started</h2> <p>You can start using the <a href="/#web-components">Web Components</a> and <a href="/design-tokens">design tokens</a> immediately by adding this stylesheet and these script tags to the <code>&lt;head&gt;</code>: </p><pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>link</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>https://unpkg.com/@umich-lib/css@v1/dist/umich-lib.css<span class="token punctuation">"</span></span> <span class="token attr-name">rel</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>stylesheet<span class="token punctuation">"</span></span><span class="token punctuation">/&gt;</span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>module<span class="token punctuation">"</span></span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>https://unpkg.com/@umich-lib/components@v1/dist/umich-lib/umich-lib.esm.js<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token script"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">nomodule</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>https://unpkg.com/@umich-lib/components@v1/dist/umich-lib/umich-lib.js<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token script"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span></code></pre> <div> <button class="button button--loud" disabled="" data-copier="{
+      &quot;text&quot;: &quot;<link href=\&quot;https://unpkg.com/@umich-lib/css@v1/dist/umich-lib.css\&quot; rel=\&quot;stylesheet\&quot;/>\n<script type=\&quot;module\&quot; src=\&quot;https://unpkg.com/@umich-lib/components@v1/dist/umich-lib/umich-lib.esm.js\&quot;></script>\n<script nomodule src=\&quot;https://unpkg.com/@umich-lib/components@v1/dist/umich-lib/umich-lib.js\&quot;></script>&quot;
+    }">Copy HTML</button> </div> <p> Use this design system across any framework or no framework at all. We accomplish this by using <a href="https://developer.mozilla.org/en-US/docs/Web/Web_Components">standardized web platform APIs</a>. We love HTML, CSS, and JavaScript. </p> </div> <footer class="site-footer"> <div class="layout"> <div class="site-footer__content"> <section class="owl"> <h2>University of Michigan Library</h2> <p>913 S. University Avenue<br>Ann Arbor, MI 48109</p> </section> <section class="owl"> <h2>Web Components</h2> <ul> <li> <a href="/chat">Chat</a> </li> <li> <a href="/universal-header">Universal Header</a> </li> <li> <a href="/website-header">Website Header</a> </li> </ul> </section> <section class="owl"> <h2>Resources</h2> <ul> <li> <a href="/design-tokens/">Design tokens</a> </li> <li> <a href="/updates/">Updates</a> </li> <li> <a href="/support/">Support</a> </li> <li> <a href="/support/#accessibility">Accessibility</a> </li> </ul> </section> </div> </div> <div class="site-footer__disclaimer"> <div class="layout"> <section> <p>© 2020, Regents of the University of Michigan</p> <p>Built with the <a href="http://design-system.lib.umich.edu">U-M Library Design System</a>, <a href="https://www.11ty.io/">Eleventy</a>, and <a href="http://github.com/mlibrary/design-system/">Github</a>.</p> </section> </div> </div> </footer> <script src="https://unpkg.com/anchor-js/anchor.min.js"></script> <script src="/sw.js"></script> <script>
+      /**
+      * Copier
+      *
+      * Use a <button> and data attribute to
+      * enable copy to clipboard browser feature.
+      *
+      * attr name        value (JSON stringified)
+      * [data-copier]    eg, JSON.stringify({ text: "<p>Hello, people!</p>" })
+      *
+      * Example:
+      *
+      * <button
+      *   disabled
+      *   data-copier="{&quot;text&quot;: &quot;<p>Hello, people!</p>&quot;}"
+      *  >Copy HTML</button>
+      */
+      (function () {
+        const copierAttr = "data-copier"
+        const copiers = document.querySelectorAll(`button[${copierAttr}]`)
+        const copierLabel = "Copy HTML";
+        const copierSuccessLabel = 'Copied <span aria-hidden="true">🖨️</span> !';
+        const copierFailureLabel = "Copier out of order"
 
-    <style>
-      :root {
-        --line-length: 65ch;
-
-        @media (min-width: 960px) {
-          --line-length: 75ch;
+        function init() {
+          copiers.forEach(function (btn) {
+            if (canBrowserCopy()) {
+              enableCopier(btn)
+            } else {
+              disableCopier(btn)
+            }
+          });
         }
-      }
 
-      .easy-reading > p {
-        max-width: var(--line-length, 60ch);
-      }
-
-      .working-concept {
-        border-top: solid var(--space-xx-small) var(--color-maize-400);
-        border-bottom: solid 1px var(--color-blue-400);
-        padding: var(--space-xxx-large) 0;
-      }
-
-      .workshop-header-container {
-        border-bottom: solid 1px var(--color-blue-400);
-        padding: var(--space-large) 0;
-      }
-
-      #page-heading {
-        margin-top: 0;
-      }
-    </style>
-
-    <!--
-      
-      Q: Hey, what is "var(--space-large)"?
-      A: A CSS custom property
-
-      Learn more about custom properties:
-      https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties
-
-      The design system offers colors and spacings as custom properties:
-      https://design-system.lib.umich.edu/design-tokens/
-
-    -->
-
-    <div class="workshop-header-container">
-      <header class="viewport-container easy-reading" 
-      aria-labelled-by="page-heading">
-        <h1 id="page-heading">
-          <span class="subtle-heading">Design System</span><br>HTML & CSS Workshop</h1>
-
-        <p>This page is maintained by the <a href="https://design-system.lib.umich.edu/">design system team</a> to design and prepare changes for our next release.</p>
-
-        <p>Do you have an idea for the workshop to be designed and included in next release? Then make your changes to <code>index.html</code> and <code>src/css/umich-lib.css</code> files and submit pull request on Github to start the conversation.</p>
-
-        <p>
-          <a href="https://github.com/mlibrary/design-system/blob/main/README.md">To get started with development read the GitHub repository README.</a>
-        </p>
-
-        <p>The rest of this page has sections of workshop design system concepts with <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selectors">css selector</a> (eg, <code>[a]</code>) and HTML examples where you can <a href="https://developer.mozilla.org/en-US/docs/Tools/Page_Inspector/How_to/Open_the_Inspector">use your browser to inspect the HTML on this page</a>.</p>
-
-        <p>
-          <strong>The remaining content on this page is working concepts</strong>
-      that will be considered for the next design system release and reviewed by those responsible or interested.</p>
-      </header>
-    </div>
-
-    <section class="working-concept">
-      <div class="viewport-container">
-        <h2>Buttons</h2>
-
-        <p>
-          <code>[.button] [.button-most-important]</code>
-        </p>
-        <button class="button">.button</button>
-        <button class="button-most-important">.button-most-important</button>
-
-        <h2>Links</h2>
-
-        <p>
-          <code>[a]</code>
-        </p>
-
-        <p>What are the <a href="https://design-system.lib.umich.edu/updates/">latest updates</a> from the Design System team?</p>
-
-        <h2>List</h2>
-
-        <p>
-          <code>[ul]</code>
-        </p>
-
-        <ul>
-          <li>
-            <a href="https://www.erikkroes.nl/blog/semantics-what-does-it-mean/">Semantics, what does it mean?</a>
-          </li>
-        </ul>
-
-        <h2>Record</h2>
-
-        <code>[dl.record]</code>
-        <dl class="record">
-          <dt>Street and No.</dt>
-          <dd>409 N. Ann Arbor St.</dd>
-          <dt>Municipal Unit</dt>
-          <dd>Saline</dd>
-          <dt>County</dt>
-          <dd>Washtenaw</dd>
-          <dt>Original Usage</dt>
-          <dd>Residence</dd>
-          <dt>Present Usage</dt>
-          <dd>Residence</dd>
-          <dt>Ownership</dt>
-          <dd>Wiegand, James H. II</dd>
-          <dt>Photo Negative No.</dt>
-          <dd>17:17</dd>
-          <dt>Photo Date</dt>
-          <dd>January, 1994</dd>
-          <dt>Photo View</dt>
-          <dd>South and east facades taken facing northwest</dd>
-          <dt>Description</dt>
-          <dd>One and a half story, side gabled, Craftsman style house. Gabled dormer on center front facade. Full width porch with massive shingled support piers resting on a solid balustrade. Rectangular shed roof bay on south facade. Variety of window configurations: paired dormers are five vertical panes over one; bay windows are four over one; soe on over one; and center front has one large pane with two small rectangular lights above. Barn red wood shingles on exterior facade. Brick chimney on north facade. One and a half car, gable front garage at rear.</dd>
-          <dt>Date of Construction</dt>
-          <dd>1914</dd>
-          <dt>Context</dt>
-          <dd>The house was probably build by Orrin Briggs around 1914. The 1912 Sanborn map shows that Orrin Briggs had a planning mill on the property to the south (Orrin Parsons owned the planning before that, as early as 1988). Mr. Briggs lived in the house until his death in 1935, then his wife, Francis, lived in it until 1947. Mr. Briggs also owned the property to the north. Other owners: Charles Burkhardt in 1960; DAvid Harwood and Susan McDonald; and James H. Wiegand II 1994.</dd>
-          <dt>Bibliographic Reference</dt>
-          <dd>City Directories: 1878, 1894, 1899, 1912, 1916, 1920, 1926, 1941, 1945. Assessor's files: 1947 and current; U.S. Census:
-        1910, 1920. Sanborn Maps: 1888, 1893, 1899, 1912, 1921, 1929; Tax Rolls: 1931 and 1935.</dd>
-          <dt>From Source</dt>
-          <dd>MICHIGAN DEPARTMENT OF STATE KG 105</dd>
-          <dt>Survey Date</dt>
-          <dd>May, 1994</dd>
-          <dt>Surveyor</dt>
-          <dd>K. Glynn & S. Kosky</dd>
-          <dt>Recorder Date</dt>
-          <dd>April, 1994</dd>
-          <dt>Card No.</dt>
-          <dd>105</dd>
-        </dl>
-
-        <h2>Strong</h2>
-
-        <p>
-          <code>[strong]</code>
-        </p>
-
-        <p>The design system exists to build trust in our <strong>digital services</strong> and create components and standards that are reusable, equitable, informed by research, and available to the public.</p>
-
-        <h2>Table</h2>
-
-        <p>
-          <code>[table]</code>
-        </p>
-
-      </section>
-
-      <section class="working-concept">
-        <div class="viewport-container">
-          <h2>Keyboard controls</h2>
-
-          <p>
-            <code>[kbd]</code>
-          </p>
-
-          <p>
-            Press <kbd>CMD</kbd> and <kbd>/</kbd> to open your A to Z service finder.
-          </p>
-        </div>
-      </section>
-
-      <section class="working-concept">
-        <div class="viewport-container">
-          <h2>Navigation</h2>
-
-          <nav aria-label="breadcrumbs" class="breadcrumbs">
-            <h3>Breadcrumbs</h3>
-
-            <p>
-              <code>
-                ol.breadcrumbs, a[aria-current="page"]
-              </code>
-            </p>
-
-            <ol>
-              <li>
-                <a href="https://www.lib.umich.edu/">Home</a>
-              </li>
-              <li>
-                <a href="#">Top level page</a>
-              </li>
-              <li>
-                <a href="#">Second level page</a>
-              </li>
-              <li>
-                <a href="#" aria-current="page"> Third level page</a>
-              </li>
-              <!-- Keep this for easy right click and copy linking for the user in browser? -->
-            </ol>
-          </nav>
-          <nav aria-label="aside" class="aside-nav">
-            <h3>Aside Nav</h3>
-
-            <p>
-              <code>
-                ol.aside-nav, a[aria-current="page"]
-              </code>
-            </p>
-
-            <ol>
-              <li>
-                <a href="#">Aside page 1</a>
-              </li>
-              <li>
-                <a href="#" aria-current="page">Aside page 2</a>
-              </li>
-              <li>
-                <a href="#">Aside page 3</a>
-              </li>
-              <li>
-                <a href="#">Aside page 4</a>
-              </li>
-              <li>
-                <a href="#">Aside page 5</a>
-              </li>
-            </ol>
-          </nav>
-
-          <nav aria-label="menu" class="menu-nav">
-            <h3>Menu Nav</h3>
-
-            <code>There is more to be worked on here, but the general idea is the menu is scrollable on the Y axis, but when that happens a menu button opens up on the left that pops out a list of all menu options. Kind of how the explore menu has a dropdown. This will allow for a lot of flexibility for responsive options. Use IntersectionObserver to trigger that MENU button on intersection of scrolling. Should be fairly straight forward, just use the browser features.
-            </code>
-
-            <p>
-              <code>.menu-nav, a[aria-current="page"]</code>
-            </p>
-
-            <ol>
-              <li>
-                <a href="#" aria-current="page">Menu Option 1</a>
-              </li>
-              <li>
-                <a href="#">Menu Option 1</a>
-              </li>
-              <li>
-                <a href="#">Menu Option 2</a>
-              </li>
-              <li>
-                <a href="#">Menu Option 3</a>
-              </li>
-              <li>
-                <a href="#">Menu Option 4</a>
-              </li>
-              <li>
-                <a href="#">Menu Option 5</a>
-              </li>
-            </ol>
-          </nav>
-        </div>
-      </section>
-
-      <section class="working-concept">
-        <div class="viewport-container">
-          <h2>Page</h2>
-
-          <p>Use <code>[.page]</code> and inspect for details. You'll see how <code>nav</code> elements are composed into a page and layout is handled with <code>grid</code> CSS code.</p>
-
-          <div class="page">
-            <nav aria-label="breadcrumb" class="breadcrumbs">
-              <ol>
-                <li>
-                  <a href="https://www.lib.umich.edu/">Home</a>
-                </li>
-                <li>
-                  <a href="">About Us</a>
-                </li>
-                <li>
-                  <a href="">About the Library</a>
-                </li>
-                <li>
-                  <a href="" aria-current="page">Mission and Values</a>
-                </li>
-              </ol>
-            </nav>
-            <nav aria="secondary" class="menu-nav">
-              <ol>
-                <li>
-                  <a href="#">Our Organization</a>
-                </li>
-                <li>
-                  <a href="#" aria-current="page">Mission and Values</a>
-                </li>
-                <li>
-                  <a href="#">Assessment</a>
-                </li>
-                <li>
-                  <a href="#">Library Council</a>
-                </li>
-              </ol>
-            </nav>
-
-            <h1 class="page-heading">Mission and Values</h1>
-
-            <div class="page-content prose">
-              <p>We are a culture and place of sustained and supported innovation. We are indispensable partners in the world-changing work of the university, as we continually reinvent the library as the platform that enables discovery, teaching, learning, health, invention, and creative expression.</p>
-
-              <h2>Mission</h2>
-
-              <p>Our mission is to support, enhance, and collaborate in the instructional, research, and service activities of faculty, students, and staff, and contribute to the common good by collecting, organizing, preserving, communicating, sharing, and creating the record of human knowledge.</p>
-
-              <h2>Values</h2>
-
-              <p>
-                <strong>Excellence.</strong> Stay at the leading edge of redefining and reimagining the great research library in the context of an increasingly networked and digital world, while holding true to our broad and enduring mission.</p>
-
-              <p>
-                <strong>Engagement.</strong>  Deepen our engagement with the core campus missions: discovery, learning, health care, and public service.</p>
-
-              <p>
-                <strong>Diversity.</strong>  Develop deep skills, individually and collectively, in being a place and community that is inclusive, diverse, and embraces difference.</p>
-
-              <p>
-                <strong>Interdependence.</strong>  Embrace interdependence and cultivate opportunities to collaborate internally with each other as "One Library," locally with campus partners, and with our peers nationally and internationally.</p>
-
-              <p>
-                <strong>Humanity.</strong>  Embody integrity, compassion, empathy, equity, and ethical behavior.</p>
-
-              <img src="/static/umich-1907.jpg"/>
-
-              <h2>Strategic directions</h2>
-
-              <p>Over the next five to seven years, we will:</p>
-
-              <ul>
-                <li>Explore new ways to support the whole lifecycle of scholarship.</li>
-                <li>Continuously evolve and reimagine user-centered services.</li>
-                <li>Continuously improve our physical and digital spaces.</li>
-                <li>Affirm our commitment to and rethink our definition of collections.</li>
-                <li>Cultivate a positive workplace climate and a diverse and inclusive community.</li>
-                <li>Practice intentional and strategic planning.</li>
-              </ul>
-
-              <p>
-                <a href="https://lib.umich.edu/about-us/about-library/strategic-directions-and-objectives">Strategic Directions and Objectives</a>
-              </p>
-
-              <p>In support of our strategic directions, over the next few years we will advance our digital service ability through strategic cross-divisional collaboration to develop infrastructure, policies, and best practices that work towards just, equitable, and inclusive outcomes.</p>
-            </div>
-
-            <nav aria-labelled-by="neighbors-heading" class="aside-nav">
-              <h2 class="page-sub-sub-heading" id="neighbors-heading">About the Library</h2>
-
-              <ol>
-                <li>
-                  <a href="#">Our Organization</a>
-                </li>
-                <li>
-                  <a href="#" aria-current="page">Mission and Values</a>
-                </li>
-                <li>
-                  <a href="#">Strategic Directions and Objectives</a>
-                </li>
-                <li>
-                  <a href="#">Diversity, Equity, Inclusion, and Accessiblity</a>
-                </li>
-                <li>
-                  <a href="#">Library Technology System Changes</a>
-                </li>
-                <li>
-                  <a href="#">Advocacy for Employees</a>
-                </li>
-                <li>
-                  <a href="#">Assessment</a>
-                </li>
-                <li>
-                  <a href="#">Library Council</a>
-                </li>
-                <li>
-                  <a href="#">Library Blogs</a>
-                </li>
-              </ol>
-            </nav>
-          </div>
-        </div>
-      </section>
-
-      <section class="working-concept">
-        <div class="viewport-container">
-          <h2>Page previews</h2>
-
-          <p>Page previews typically use the link text that matches the page heading and it should be the only <code>h1</code> heading on the page. This is a great way to help people understand where they will and feel well oriented and comfortable when they arrive to that webpage. You could also consider matching the description of can match the metadata description of the page too.</p>
-
-          <p>
-            <code>[ul.page-previews]</code>
-          </p>
-
-          <p></p>
-
-          <ul class="page-previews">
-            <li>
-              <a href="">
-                <h3>Astronomy</h3>
-                <p>Theoretical and descriptive works on astronomy that reflect the university’s research needs.</p>
-              </a>
-            </li>
-            <li>
-              <a href="">
-                <h3>Biology and Natural History</h3>
-                <p>Materials in the biological sciences at all levels of inquiry.</p>
-              </a>
-            </li>
-            <li>
-              <a href="">
-                <h3>Chemistry</h3>
-                <p>Providing chemistry information, literature, and research across all aspects of the discipline.</p>
-              </a>
-            </li>
-            <li>
-              <a href="">
-                <h3>Earth and Environmental Sciences</h3>
-                <p>Physical sciences literature regarding the origin, evolution, and future of the Earth.</p>
-              </a>
-            </li>
-            <li>
-              <a href="">
-                <h3>Environment and Sustainability</h3>
-                <p>Collections supporting a wide range of environmental science and environmental policy specialties.</p>
-              </a>
-            </li>
-            <li>
-              <a href="">
-                <h3>Mathematics and Statistics</h3>
-                <p>A comprehensive collection of mathematics and statistics materials, from historical books to modern electronic content.</p>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </section>
-
-      <section class="working-concept">
-        <div class="viewport-container">
-          <h2>Message</h2>
-
-          <p>TODO</p>
-        </div>
-      </section>
-
-      <section class="working-concept">
-        <div class="viewport-container">
-          <h2>Page footer</h2>
-
-          <p>Use <code>[footer.page-footer]</code> then inspect element for child classes.</p>
-          <p>
-            <strong>Options</strong>
-          </p>
-
-          <table>
-            <tr>
-              <th>custom property</th>
-              <th>default</th>
-            </tr>
-            <tr>
-              <td>
-                <code>--column-width</code>
-              </td>
-              <td>
-                <code>280px</code>
-              </td>
-            </tr>
-          </table>
-        </div>
-
-        <footer class="page-footer">
-          <div class="viewport-container">
-            <div class="page-footer__content">
-              <section>
-                <h2>University of Michigan Library</h2>
-                <p>913 S. University Avenue<br/>Ann Arbor, MI 48109</p>
-              </section>
-
-              <section>
-                <h2>First column list</h2>
-                <ul>
-                  <li>
-                    <a href="#">Navigation item 1</a>
-                  </li>
-                  <li>
-                    <a href="#">Navigation item 2</a>
-                  </li>
-                  <li>
-                    <a href="#">Navigation item 3</a>
-                  </li>
-                  <li>
-                    <a href="#">Navigation item 4</a>
-                  </li>
-                </ul>
-              </section>
-
-              <section>
-                <h2>Second column list</h2>
-                <ul>
-                  <li>
-                    <a href="#">Navigation item 1</a>
-                  </li>
-                  <li>
-                    <a href="#">Navigation item 2</a>
-                  </li>
-                </ul>
-              </section>
-
-              <section>
-                <h2>Third column list</h2>
-                <ul>
-                  <li>
-                    <a href="#">Navigation item 1</a>
-                  </li>
-                  <li>
-                    <a href="#">Navigation item 2</a>
-                  </li>
-                  <li>
-                    <a href="#">Navigation item 3</a>
-                  </li>
-                  <li>
-                    <a href="#">Navigation item 4</a>
-                  </li>
-                  <li>
-                    <a href="#">Navigation item 5</a>
-                  </li>
-                </ul>
-              </section>
-            </div>
-          </div>
-          <div class="page-footer__disclaimer">
-            <div class="viewport-container">
-              <p>© 2021, Regents of the University of Michigan</p>
-            </div>
-          </div>
-        </footer>
-      </div>
-    </div>
-  </section>
-  <m-chat></m-chat>
-</body>
-</html>
+        function enableCopier(btn) {
+          btn.addEventListener('click', function (event) {
+            requestCopy(btn, event);
+          });
+
+          btn.removeAttribute('disabled');
+        }
+
+        function disableCopier(btn) {
+          btn.setAttribute('disabled', true);
+        }
+
+        function requestCopy(btn, event) {
+          try {
+            const text = JSON
+              .parse(btn.getAttribute(copierAttr))
+              .text;
+
+            if (!text) {
+              const error = "The copier has no text to copy.";
+              console.warn(error, btn, event)
+              throw error
+            }
+
+            navigator
+              .clipboard
+              .writeText(text)
+              .then(handleCopySuccess(btn))
+          } catch (err) {
+            copyFailed(btn, err)
+          }
+        }
+
+        function handleCopySuccess(btn) {
+          /*
+           * Set role="alert" on the copier so that on success
+           * the label is announced to users.
+           *
+           * Docs: https://www.w3.org/TR/wai-aria-practices-1.1/#alert
+          **/
+          btn.setAttribute('role', 'alert');
+          btn.innerHTML = copierSuccessLabel;
+
+          setTimeout(function () {
+            btn.removeAttribute('role');
+            btn.innerText = copierLabel;
+          }, 3000)
+        }
+
+        function handleCopyFailure(btn, err) {
+          btn.setAttribute('disabled', true);
+          btn.innerText = copierFailureLabel
+          console.error('Failed to copy to clipboard!', err)
+        }
+
+        function canBrowserCopy() {
+          return !!navigator.clipboard
+        }
+
+        init();
+      }());
+    </script> </body></html>
